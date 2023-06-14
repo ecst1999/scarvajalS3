@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="scarvajalS3.Page2">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="labelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="TextColor" Value="Fuchsia"/>
+                <Setter Property="HorizontalTextAlignment" Value="End"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!" Style="{StaticResource labelStyle}"/>
+            <Label x:Name="lblDato1" Style="{StaticResource labelStyle}"/>
+            <Entry x:Name="txtDato2" IsEnabled="False"/>
+            <Button x:Name="btnAbrir" Text="Abrir ventana 3" Clicked="btnAbrir_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
